@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 45 43% 92%; /* Light beige #F0EAD6 */
+    --foreground: 33 25% 20%; /* Dark Brown for text */
+
+    --card: 45 43% 97%; /* Lighter Beige for cards */
+    --card-foreground: 33 25% 20%; /* Dark Brown for text on cards */
+
+    --popover: 45 43% 97%; /* Lighter Beige */
+    --popover-foreground: 33 25% 20%; /* Dark Brown */
+
+    --primary: 137 29% 31%; /* Earthy Green #386641 */
+    --primary-foreground: 45 43% 95%; /* Off-white/very light beige for text on primary */
+
+    --secondary: 33 25% 55%; /* Muted brown #A68A64 */
+    --secondary-foreground: 45 43% 95%; /* Off-white for text on secondary */
+
+    --muted: 33 25% 85%; /* Lighter Muted Brown */
+    --muted-foreground: 33 25% 35%; /* Darker Muted Brown for muted text */
+
+    --accent: 14 70% 62%; /* Terracotta #E07A5F */
+    --accent-foreground: 0 0% 100%; /* White for text on accent */
+
+    --destructive: 0 72% 51%; /* A suitable red, e.g., #D94A4A */
+    --destructive-foreground: 0 0% 100%; /* White */
+    
+    --border: 33 25% 80%; /* Light Brown for borders */
+    --input: 33 25% 88%; /* Very Light Brown for input backgrounds */
+    --ring: 137 29% 31%; /* Earthy Green for rings */
+
+    --radius: 0.5rem;
+
+    /* Sidebar specific colors, can be adjusted based on shadcn/ui Sidebar component theme */
+    --sidebar-background: 33 25% 96%; /* Slightly darker beige or light grey */
+    --sidebar-foreground: 33 25% 25%; /* Dark Brown */
+    --sidebar-primary: 137 29% 31%; /* Earthy Green */
+    --sidebar-primary-foreground: 45 43% 95%; /* Off-white */
+    --sidebar-accent: 137 29% 41%; /* Lighter Earthy Green for hover/active */
+    --sidebar-accent-foreground: 45 43% 95%; /* Off-white */
+    --sidebar-border: 33 25% 80%; /* Light Brown */
+    --sidebar-ring: 137 29% 31%; /* Earthy Green */
+
+    --chart-1: 137 29% 50%;
+    --chart-2: 33 25% 65%;
+    --chart-3: 14 70% 70%;
+    --chart-4: 137 29% 40%;
+    --chart-5: 33 25% 45%;
+  }
+
+  .dark {
+    /* Define dark theme variables - derived from light theme for consistency */
+    --background: 33 15% 12%; /* Dark Brown/Grey */
+    --foreground: 45 30% 88%; /* Light Beige */
+
+    --card: 33 15% 15%; /* Slightly lighter Dark Brown/Grey */
+    --card-foreground: 45 30% 88%; /* Light Beige */
+
+    --popover: 33 15% 15%;
+    --popover-foreground: 45 30% 88%;
+
+    --primary: 137 35% 55%; /* Brighter Earthy Green */
+    --primary-foreground: 33 15% 10%; /* Very Dark Brown for text on primary */
+
+    --secondary: 33 25% 45%; /* Darker Muted Brown */
+    --secondary-foreground: 45 30% 90%; /* Light Beige */
+
+    --muted: 33 15% 25%; /* Darker Muted tone */
+    --muted-foreground: 33 20% 65%; /* Lighter Muted text */
+
+    --accent: 14 65% 55%; /* Slightly desaturated Terracotta */
+    --accent-foreground: 0 0% 100%; /* White */
+
+    --destructive: 0 60% 45%; /* Darker Red */
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 33 15% 30%; /* Dark Border */
+    --input: 33 15% 28%; /* Dark Input */
+    --ring: 137 35% 55%; /* Brighter Earthy Green for rings */
+    
+    /* Dark Sidebar specific colors */
+    --sidebar-background: 33 15% 10%; /* Very Dark Brown/Grey */
+    --sidebar-foreground: 45 30% 80%; /* Light Beige/Grey */
+    --sidebar-primary: 137 35% 55%; /* Brighter Earthy Green */
+    --sidebar-primary-foreground: 33 15% 5%; /* Almost Black */
+    --sidebar-accent: 137 35% 45%; /* Medium Earthy Green */
+    --sidebar-accent-foreground: 45 30% 90%; /* Light Beige */
+    --sidebar-border: 33 15% 25%; /* Darker Border */
+    --sidebar-ring: 137 35% 55%;
+
+    --chart-1: 137 35% 60%;
+    --chart-2: 33 25% 55%;
+    --chart-3: 14 65% 60%;
+    --chart-4: 137 35% 50%;
+    --chart-5: 33 25% 35%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
