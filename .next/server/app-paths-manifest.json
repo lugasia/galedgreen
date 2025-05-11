@@ -1,0 +1,10 @@
+{
+  "/admin/categories/page": "app/admin/categories/page.js",
+  "/admin/dashboard/page": "app/admin/dashboard/page.js",
+  "/admin/orders/page": "app/admin/orders/page.js",
+  "/admin/plants/edit/[id]/page": "app/admin/plants/edit/[id]/page.js",
+  "/admin/plants/page": "app/admin/plants/page.js",
+  "/admin/settings/page": "app/admin/settings/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js"
+}

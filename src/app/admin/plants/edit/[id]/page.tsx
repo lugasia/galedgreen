@@ -1,7 +1,6 @@
-
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, use } from "react";
 import { PlantForm, type PlantFormData } from "@/components/forms/PlantForm";
 import { getPlantById, updatePlant, clearCachedPlantData } from "@/services/plantService";
 import { useToast } from "@/hooks/use-toast";
@@ -9,6 +8,7 @@ import { useRouter } from "next/navigation";
 import type { Plant } from "@/lib/types";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Loader2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 interface EditPlantPageProps {
   params: { id: string };
@@ -20,7 +20,13 @@ export default function EditPlantPage({ params }: EditPlantPageProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
   const router = useRouter();
-  const plantId = params.id;
+
+  // Type guard for Promise
+  function isPromise(obj: any): obj is Promise<any> {
+    return !!obj && typeof obj.then === 'function';
+  }
+  const resolvedParams: { id: string } = isPromise(params) ? use(params) : params;
+  const plantId = resolvedParams.id;
 
   const fetchPlantData = useCallback(async () => {
     setIsLoading(true);

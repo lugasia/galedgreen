@@ -1,0 +1,126 @@
+{
+  "node": {
+    "00048d1e57a9138193cd903dd57987bd6d82ad3061": {
+      "workers": {
+        "app/admin/plants/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/plants/page": "action-browser"
+      }
+    },
+    "008ad05d17691a04611e39115ada6f420443016cf3": {
+      "workers": {
+        "app/admin/plants/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/plants/page": "action-browser"
+      }
+    },
+    "40f65d6d4622a26b3e31513841fded597d03a859df": {
+      "workers": {
+        "app/admin/plants/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/plants/page": "action-browser"
+      }
+    },
+    "0010bbf337cb59c41dd0f26be3f2d2409ed79bb662": {
+      "workers": {
+        "app/admin/plants/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/plants/page": "action-browser"
+      }
+    },
+    "005ec9875aab2a218dc55eb399eb4dddd799f70288": {
+      "workers": {
+        "app/admin/plants/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/plants/page": "action-browser"
+      }
+    },
+    "00c70ccfbed662ef7b1629745f6b1378ad819043f7": {
+      "workers": {
+        "app/admin/plants/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/plants/page": "action-browser"
+      }
+    },
+    "4003f8149b467e61cfd276437f0fa2c162667d905e": {
+      "workers": {
+        "app/admin/plants/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/plants/page": "action-browser"
+      }
+    },
+    "4017980dc72df10f11396320c4a9230478c2e510ed": {
+      "workers": {
+        "app/admin/plants/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/plants/page": "action-browser"
+      }
+    },
+    "40a125f45f37c82df6ca370c3f7ef0b6dd3b5bc1c0": {
+      "workers": {
+        "app/admin/plants/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/plants/page": "action-browser"
+      }
+    },
+    "40b80b82dc062307c59a9337f421859d58c1bbc7ba": {
+      "workers": {
+        "app/admin/plants/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/plants/page": "action-browser"
+      }
+    },
+    "6066e95e26058683482bd7c1918b859054211e8334": {
+      "workers": {
+        "app/admin/plants/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/plants/page": "action-browser"
+      }
+    }
+  },
+  "edge": {}
+}

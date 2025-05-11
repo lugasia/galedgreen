@@ -1,4 +1,3 @@
-
 "use client"; 
 
 import { useState, useEffect, useMemo, useCallback } from 'react';
@@ -81,7 +80,8 @@ export default function HomePage() {
     return plants.filter(plant => {
       const matchesCategory = selectedCategory ? plant.categoryId === selectedCategory : true;
       const matchesSearch = searchTerm ? plant.name.toLowerCase().includes(searchTerm.toLowerCase()) : true;
-      return matchesCategory && matchesSearch;
+      const inStock = plant.stock > 0;
+      return matchesCategory && matchesSearch && inStock;
     });
   }, [plants, selectedCategory, searchTerm]);
 
@@ -153,7 +153,7 @@ export default function HomePage() {
         </div>
       </section>
       
-      {categories.length > 0 && !isLoading && ( // Don't show categories if still loading initial data
+      {categories.length > 0 && !isLoading && filteredPlants.length > 0 && (
         <section id="categories" className="pt-4">
           <h2 className="text-2xl font-semibold text-primary mb-4">קטגוריות</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">

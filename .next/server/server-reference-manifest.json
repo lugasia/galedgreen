@@ -1,0 +1,538 @@
+{
+  "node": {
+    "00048d1e57a9138193cd903dd57987bd6d82ad3061": {
+      "workers": {
+        "app/admin/categories/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/categories/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/dashboard/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/orders/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/orders/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/edit/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/edit/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/settings/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/settings/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/categories/page": "action-browser",
+        "app/admin/dashboard/page": "action-browser",
+        "app/admin/orders/page": "action-browser",
+        "app/admin/plants/edit/[id]/page": "action-browser",
+        "app/admin/plants/page": "action-browser",
+        "app/admin/settings/page": "action-browser",
+        "app/page": "action-browser"
+      }
+    },
+    "008ad05d17691a04611e39115ada6f420443016cf3": {
+      "workers": {
+        "app/admin/categories/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/categories/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/dashboard/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/orders/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/orders/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/edit/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/edit/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/settings/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/settings/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/categories/page": "action-browser",
+        "app/admin/dashboard/page": "action-browser",
+        "app/admin/orders/page": "action-browser",
+        "app/admin/plants/edit/[id]/page": "action-browser",
+        "app/admin/plants/page": "action-browser",
+        "app/admin/settings/page": "action-browser",
+        "app/page": "action-browser"
+      }
+    },
+    "40f65d6d4622a26b3e31513841fded597d03a859df": {
+      "workers": {
+        "app/admin/categories/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/categories/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/dashboard/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/orders/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/orders/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/edit/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/edit/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/settings/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/settings/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/categories/page": "action-browser",
+        "app/admin/dashboard/page": "action-browser",
+        "app/admin/orders/page": "action-browser",
+        "app/admin/plants/edit/[id]/page": "action-browser",
+        "app/admin/plants/page": "action-browser",
+        "app/admin/settings/page": "action-browser",
+        "app/page": "action-browser"
+      }
+    },
+    "0010bbf337cb59c41dd0f26be3f2d2409ed79bb662": {
+      "workers": {
+        "app/admin/dashboard/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/edit/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/edit/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/page": "action-browser",
+        "app/admin/plants/edit/[id]/page": "action-browser",
+        "app/admin/plants/page": "action-browser",
+        "app/page": "action-browser"
+      }
+    },
+    "005ec9875aab2a218dc55eb399eb4dddd799f70288": {
+      "workers": {
+        "app/admin/dashboard/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/edit/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/edit/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/page": "action-browser",
+        "app/admin/plants/edit/[id]/page": "action-browser",
+        "app/admin/plants/page": "action-browser",
+        "app/page": "action-browser"
+      }
+    },
+    "00c70ccfbed662ef7b1629745f6b1378ad819043f7": {
+      "workers": {
+        "app/admin/dashboard/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/edit/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/edit/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/page": "action-browser",
+        "app/admin/plants/edit/[id]/page": "action-browser",
+        "app/admin/plants/page": "action-browser",
+        "app/page": "action-browser"
+      }
+    },
+    "4003f8149b467e61cfd276437f0fa2c162667d905e": {
+      "workers": {
+        "app/admin/dashboard/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/edit/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/edit/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/page": "action-browser",
+        "app/admin/plants/edit/[id]/page": "action-browser",
+        "app/admin/plants/page": "action-browser",
+        "app/page": "action-browser"
+      }
+    },
+    "4017980dc72df10f11396320c4a9230478c2e510ed": {
+      "workers": {
+        "app/admin/dashboard/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/edit/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/edit/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/page": "action-browser",
+        "app/admin/plants/edit/[id]/page": "action-browser",
+        "app/admin/plants/page": "action-browser",
+        "app/page": "action-browser"
+      }
+    },
+    "40a125f45f37c82df6ca370c3f7ef0b6dd3b5bc1c0": {
+      "workers": {
+        "app/admin/dashboard/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/edit/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/edit/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/page": "action-browser",
+        "app/admin/plants/edit/[id]/page": "action-browser",
+        "app/admin/plants/page": "action-browser",
+        "app/page": "action-browser"
+      }
+    },
+    "40b80b82dc062307c59a9337f421859d58c1bbc7ba": {
+      "workers": {
+        "app/admin/dashboard/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/edit/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/edit/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/page": "action-browser",
+        "app/admin/plants/edit/[id]/page": "action-browser",
+        "app/admin/plants/page": "action-browser",
+        "app/page": "action-browser"
+      }
+    },
+    "6066e95e26058683482bd7c1918b859054211e8334": {
+      "workers": {
+        "app/admin/dashboard/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/edit/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/edit/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/page": "action-browser",
+        "app/admin/plants/edit/[id]/page": "action-browser",
+        "app/admin/plants/page": "action-browser",
+        "app/page": "action-browser"
+      }
+    },
+    "000c211730d13e848c15253ca06cd26d11e6940e9c": {
+      "workers": {
+        "app/admin/categories/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/categories/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/edit/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/edit/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/categories/page": "action-browser",
+        "app/admin/plants/edit/[id]/page": "action-browser",
+        "app/page": "action-browser"
+      }
+    },
+    "009e06250d772a7cc5c56170051a28a5b180124d95": {
+      "workers": {
+        "app/admin/categories/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/categories/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/edit/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/edit/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/categories/page": "action-browser",
+        "app/admin/plants/edit/[id]/page": "action-browser",
+        "app/page": "action-browser"
+      }
+    },
+    "406bef2a73316d5fa29fb2666be2fa986f5cf25600": {
+      "workers": {
+        "app/admin/categories/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/categories/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/edit/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/edit/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/categories/page": "action-browser",
+        "app/admin/plants/edit/[id]/page": "action-browser",
+        "app/page": "action-browser"
+      }
+    },
+    "4075071496c20b7bc85090c807ee81404351e47b6d": {
+      "workers": {
+        "app/admin/categories/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/categories/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/edit/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/edit/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/categories/page": "action-browser",
+        "app/admin/plants/edit/[id]/page": "action-browser",
+        "app/page": "action-browser"
+      }
+    },
+    "605da8f00ee17e96c5f84ded99d8b36f5737375702": {
+      "workers": {
+        "app/admin/categories/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/categories/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/plants/edit/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/plants/edit/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/categoryService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/categories/page": "action-browser",
+        "app/admin/plants/edit/[id]/page": "action-browser",
+        "app/page": "action-browser"
+      }
+    },
+    "0022f91d9786bf625d958fc3ba355638ec3fb00a54": {
+      "workers": {
+        "app/admin/dashboard/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/orders/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/orders/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/page": "action-browser",
+        "app/admin/orders/page": "action-browser"
+      }
+    },
+    "405c1fababb9aacac6bf3d698351d38aa42fb93a03": {
+      "workers": {
+        "app/admin/dashboard/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/orders/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/orders/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/page": "action-browser",
+        "app/admin/orders/page": "action-browser"
+      }
+    },
+    "4064fa0d9af1849281c32829839f23aabc0cefc792": {
+      "workers": {
+        "app/admin/dashboard/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/orders/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/orders/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/page": "action-browser",
+        "app/admin/orders/page": "action-browser"
+      }
+    },
+    "409e18aeb4399849dc4e59f8570046168554010c17": {
+      "workers": {
+        "app/admin/dashboard/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/orders/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/orders/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/page": "action-browser",
+        "app/admin/orders/page": "action-browser"
+      }
+    },
+    "40fbeb3a98d574842a6afa19ab103e19f28cdf7337": {
+      "workers": {
+        "app/admin/dashboard/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/orders/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/orders/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/page": "action-browser",
+        "app/admin/orders/page": "action-browser"
+      }
+    },
+    "60235ac50a0aa7a936631106c83d699a0f0fe7646a": {
+      "workers": {
+        "app/admin/dashboard/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/dashboard/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/plantService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        },
+        "app/admin/orders/page": {
+          "moduleId": "[project]/.next-internal/server/app/admin/orders/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/services/settingsService.ts [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/services/orderService.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/dashboard/page": "action-browser",
+        "app/admin/orders/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "0YN4fNJprPN/JLRK+0Tb/+X3+Howg4qrzveM2vK97OU="
+}
