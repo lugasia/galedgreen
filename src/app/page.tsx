@@ -9,6 +9,7 @@ import { getPlantsWithCategories } from '@/services/plantService';
 import { getCategories } from '@/services/categoryService';
 import { useToast } from '@/hooks/use-toast';
 import { Skeleton } from "@/components/ui/skeleton";
+import { PlantCard } from "@/components/PlantCard";
 
 export default function HomePage() {
   const [plants, setPlants] = useState<Plant[]>([]);
@@ -105,8 +106,9 @@ export default function HomePage() {
               variant={selectedCategory === category.id ? "default" : "outline"}
               onClick={() => handleCategoryChange(category.id)}
               disabled={categoryCounts[category.id] === 0}
+              className={`rounded-full px-6 py-2 text-base font-semibold shadow-md transition-all duration-200 ${selectedCategory === category.id ? 'bg-primary text-primary-foreground' : 'bg-background text-primary border-primary hover:bg-primary/10'}`}
             >
-              {category.name} ({categoryCounts[category.id] || 0})
+              {category.name} <span className="ml-2 text-xs text-muted-foreground">({categoryCounts[category.id] || 0})</span>
             </Button>
           ))}
         </div>
@@ -130,14 +132,7 @@ export default function HomePage() {
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {filteredPlants.map((plant) => (
-            <div key={plant.id} className="flex flex-col overflow-hidden shadow-lg h-full">
-              {/* כאן יש להחזיר את קומפוננטת PlantCard הישנה */}
-              {/* <PlantCard plant={plant} /> */}
-              <div className="p-4">
-                <h2 className="text-xl font-bold mb-2">{plant.name}</h2>
-                {/* הוסף כאן תצוגת תמונה, קטגוריה, מלאי וכו' */}
-              </div>
-            </div>
+            <PlantCard key={plant.id} plant={plant} />
           ))}
         </div>
       )}
