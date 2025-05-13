@@ -13,6 +13,7 @@ export interface Plant {
   categoryId: string; 
   category?: Category; // Optional: for client-side convenience after resolving
   imageUrl: string;
+  imageBase64?: string; // Add this line for base64 images
   height: string; 
   watering: string; 
   uses: string; 

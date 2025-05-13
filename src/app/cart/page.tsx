@@ -40,7 +40,7 @@ export default function CartPage() {
             <Card key={item.id} className="flex flex-col sm:flex-row items-center p-4 gap-4 shadow-sm">
               <div className="relative w-24 h-24 sm:w-32 sm:h-32 rounded-md overflow-hidden flex-shrink-0">
                 <Image
-                  src={item.imageUrl || "https://picsum.photos/128/128"}
+                  src={item.imageBase64 || item.imageUrl || "https://picsum.photos/128/128"}
                   alt={item.name}
                   layout="fill"
                   objectFit="cover"
@@ -49,7 +49,7 @@ export default function CartPage() {
               </div>
               <div className="flex-grow text-center sm:text-right">
                 <h2 className="text-lg font-medium text-foreground">{item.name}</h2>
-                <p className="text-sm text-muted-foreground">{item.category.name}</p>
+                <p className="text-sm text-muted-foreground">{item.category?.name || 'לא משויך'}</p>
                 <p className="text-sm text-muted-foreground">מחיר: <span className="font-semibold">חינם</span></p>
               </div>
               <div className="flex items-center space-x-2 my-2 sm:my-0" dir="ltr">

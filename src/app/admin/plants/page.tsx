@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, useEffect, useCallback } from 'react';
@@ -108,13 +107,13 @@ export default function AdminPlantsPage() {
               <TableRow key={plant.id}>
                 <TableCell>
                   <Image 
-                    src={plant.imageUrl || "https://picsum.photos/seed/placeholder/50/50"}
+                    src={plant.imageBase64 || plant.imageUrl || "https://picsum.photos/seed/placeholder/50/50"}
                     alt={plant.name} 
                     width={40} 
                     height={40} 
                     className="rounded-sm object-cover"
                     data-ai-hint="plant thumbnail"
-                    unoptimized={plant.imageUrl?.includes("lh3.google.com") || plant.imageUrl?.includes("lh6.googleusercontent.com")} // Add if issues with Google User Content
+                    unoptimized={(!plant.imageBase64 && (plant.imageUrl?.includes("lh3.google.com") || plant.imageUrl?.includes("lh6.googleusercontent.com")))}
                   />
                 </TableCell>
                 <TableCell className="font-medium">{plant.name}</TableCell>

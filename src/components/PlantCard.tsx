@@ -30,13 +30,13 @@ export function PlantCard({ plant }: PlantCardProps) {
       <CardHeader className="p-0">
         <div className="aspect-[4/3] relative w-full">
           <Image
-            src={plant.imageUrl || "https://picsum.photos/400/300"}
+            src={plant.imageBase64 || plant.imageUrl || "https://picsum.photos/400/300"}
             alt={plant.name}
             layout="fill"
             objectFit="cover"
             className="transition-transform duration-300 group-hover:scale-105"
             data-ai-hint="plant nature"
-            unoptimized={plant.imageUrl?.includes("picsum.photos")}
+            unoptimized={(!plant.imageBase64 && plant.imageUrl?.includes("picsum.photos"))}
           />
         </div>
       </CardHeader>
