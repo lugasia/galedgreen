@@ -1,4 +1,3 @@
-
 import type { Metadata } from 'next';
 import { Inter, Roboto_Mono } from 'next/font/google';
 import './globals.css';
@@ -20,8 +19,8 @@ const roboto_mono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Gal-Ed Greens - Community Nursery',
-  description: 'Order plants from the Gal-Ed community nursery.',
+  title: 'משתלת גלעד',
+  description: 'הזמנת צמחים ממשתלת גלעד הקהילתית.',
 };
 
 interface RootLayoutProps {

@@ -56,7 +56,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
               <h1 className="text-xl font-semibold text-foreground">ניהול משתלה</h1>
               {/* Add user profile, notifications etc. here */}
             </header>
-            <div className="flex-1 overflow-y-auto p-6 bg-muted/30">
+            <div className="flex-1 overflow-y-auto p-0 bg-muted/30">
               {children}
             </div>
           </SidebarInset>

@@ -9,9 +9,9 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState } from "react";
 
 const navItems = [
-  { href: "/", label: "Home", icon: Home },
-  { href: "/#categories", label: "Categories", icon: Sprout },
-  { href: "/cart", label: "Cart", icon: ShoppingCart, isCart: true },
+  { href: "/", label: "בית", icon: Home },
+  { href: "/#categories", label: "קטגוריות", icon: Sprout },
+  { href: "/cart", label: "עגלה", icon: ShoppingCart, isCart: true },
 ];
 
 export function UserNavbar() {

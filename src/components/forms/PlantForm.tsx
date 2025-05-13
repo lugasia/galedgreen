@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useForm, type SubmitHandler } from "react-hook-form";
@@ -12,9 +11,10 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Loader2 } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import { getCategories, clearCachedCategories } from "@/services/categoryService";
 import { useToast } from "@/hooks/use-toast";
+import Link from "next/link";
 
 const plantFormSchema = z.object({
   name: z.string().min(2, "שם הצמח חייב להכיל לפחות 2 תווים."),
@@ -41,6 +41,8 @@ export function PlantForm({ plant, onSubmit, isSubmitting }: PlantFormProps) {
   const { toast } = useToast();
   const [categories, setCategories] = useState<Category[]>([]);
   const [isLoadingCategories, setIsLoadingCategories] = useState(true);
+  const [imageBase64, setImageBase64] = useState<string>(plant?.imageBase64 || "");
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
 
   const form = useForm<PlantFormData>({
     resolver: zodResolver(plantFormSchema),
@@ -104,11 +106,23 @@ export function PlantForm({ plant, onSubmit, isSubmitting }: PlantFormProps) {
     fetchCategories();
   }, [fetchCategories]);
 
+  const handleImageFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setImageBase64(reader.result as string);
+        form.setValue("imageUrl", ""); // Clear imageUrl if uploading file
+      };
+      reader.readAsDataURL(file);
+    }
+  };
 
   const handleSubmitForm: SubmitHandler<PlantFormData> = async (data) => {
     const formData = {
       ...data,
-      imageUrl: data.imageUrl || `https://picsum.photos/seed/${encodeURIComponent(data.name)}/400/300`,
+      imageBase64: imageBase64 || plant?.imageBase64 || undefined,
+      imageUrl: imageBase64 ? "" : (data.imageUrl || `https://picsum.photos/seed/${encodeURIComponent(data.name)}/400/300`),
     };
     await onSubmit(formData);
   };
@@ -171,9 +185,21 @@ export function PlantForm({ plant, onSubmit, isSubmitting }: PlantFormProps) {
           name="imageUrl"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>כתובת URL של תמונה</FormLabel>
+              <FormLabel>תמונה</FormLabel>
               <FormControl>
-                <Input placeholder="השאר ריק לתמונה אקראית או הדבק קישור..." {...field} />
+                <div className="flex flex-col gap-2">
+                  <Input placeholder="כתובת URL של תמונה או העלה קובץ..." {...field} disabled={!!imageBase64} />
+                  <input
+                    type="file"
+                    accept="image/*"
+                    ref={fileInputRef}
+                    onChange={handleImageFileChange}
+                    className="block"
+                  />
+                  {imageBase64 && (
+                    <img src={imageBase64} alt="תצוגה מקדימה" className="w-32 h-24 object-cover rounded border" />
+                  )}
+                </div>
               </FormControl>
               <FormMessage />
             </FormItem>

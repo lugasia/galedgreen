@@ -9,7 +9,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { PlusCircle, MoreHorizontal, Edit, Trash2, Search, Loader2 } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { getPlantsWithCategories, deletePlant, clearCachedPlantData } from '@/services/plantService';
+import { getPlantsWithCategories, deletePlant, clearCachedPlantData, updatePlant } from '@/services/plantService';
 import { useToast } from '@/hooks/use-toast';
 
 export default function AdminPlantsPage() {
@@ -17,6 +17,7 @@ export default function AdminPlantsPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const { toast } = useToast();
+  const [updatingStockId, setUpdatingStockId] = useState<string | null>(null);
 
   const fetchPlantsData = useCallback(async () => {
     setIsLoading(true);
@@ -57,6 +58,19 @@ export default function AdminPlantsPage() {
         const errorMessage = error instanceof Error ? error.message : "שגיאה לא ידועה";
         toast({ title: "שגיאה", description: `מחיקה נכשלה: ${errorMessage}`, variant: "destructive" });
       }
+    }
+  };
+
+  const handleStockChange = async (plantId: string, newStock: number) => {
+    setUpdatingStockId(plantId);
+    try {
+      await updatePlant(plantId, { stock: newStock });
+      setPlants((prev) => prev.map((p) => p.id === plantId ? { ...p, stock: newStock } : p));
+      toast({ title: 'המלאי עודכן', description: `המלאי החדש: ${newStock}` });
+    } catch (error) {
+      toast({ title: 'שגיאה', description: 'עדכון המלאי נכשל', variant: 'destructive' });
+    } finally {
+      setUpdatingStockId(null);
     }
   };
 
@@ -119,7 +133,11 @@ export default function AdminPlantsPage() {
                 <TableCell className="font-medium">{plant.name}</TableCell>
                 <TableCell>{plant.category ? plant.category.name : 'לא משויך'}</TableCell>
                 <TableCell className={`text-center font-semibold ${plant.stock > 0 ? (plant.stock < 5 ? 'text-orange-500' : 'text-green-600') : 'text-destructive'}`}>
-                  {plant.stock}
+                  <div className="flex items-center justify-center gap-2">
+                    <Button size="icon" variant="outline" disabled={updatingStockId === plant.id || plant.stock <= 0} onClick={() => handleStockChange(plant.id, plant.stock - 1)}>-</Button>
+                    {updatingStockId === plant.id ? <Loader2 className="animate-spin w-5 h-5" /> : plant.stock}
+                    <Button size="icon" variant="outline" disabled={updatingStockId === plant.id} onClick={() => handleStockChange(plant.id, plant.stock + 1)}>+</Button>
+                  </div>
                 </TableCell>
                 <TableCell className="text-right">
                   <DropdownMenu>
