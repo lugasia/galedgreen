@@ -36,12 +36,8 @@ const adminNavItems = [
 export function AdminSidebar() {
   const pathname = usePathname();
 
-  // Dummy logout function
-  const handleLogout = () => {
-    // Implement actual logout logic here (e.g., Firebase sign out)
-    alert("Logged out (simulation)");
-    // router.push('/login');
-  };
+  // Remove dummy logout logic. In the future, implement real logout here if needed.
+  const handleLogout = () => {};
 
   return (
     <Sidebar
