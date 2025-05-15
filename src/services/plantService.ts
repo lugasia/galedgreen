@@ -33,6 +33,8 @@ function mapMongoPlantToPlant(mongoPlant: MongoPlant): Plant {
 
 export async function getPlants(): Promise<Plant[]> {
   const collection = await getCollection('plants');
+  const count = await collection.countDocuments();
+  console.log('Total plants in collection:', count);
   const mongoPlants = await collection.find({}).toArray() as MongoPlant[];
   return mongoPlants.map(mapMongoPlantToPlant);
 }
@@ -55,7 +57,9 @@ export async function getPlantsWithCategories(): Promise<Plant[]> {
 
 export async function getPlantById(plantId: string): Promise<Plant | null> {
   const collection = await getCollection('plants');
+  console.log('getPlantById called with plantId:', plantId);
   const mongoPlant = await collection.findOne({ id: plantId }) as MongoPlant | null;
+  console.log('getPlantById result:', mongoPlant);
   if (mongoPlant) {
     const plant = mapMongoPlantToPlant(mongoPlant);
     const categories = await getCategoriesFromService();
