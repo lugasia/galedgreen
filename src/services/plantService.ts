@@ -85,12 +85,14 @@ export async function addPlant(plantData: Omit<Plant, 'id' | 'category' | 'creat
 
 export async function updatePlant(plantId: string, plantData: Partial<Omit<Plant, 'id' | 'category' | 'createdAt' | 'updatedAt'>>): Promise<void> {
   const collection = await getCollection('plants');
+  console.log('updatePlant called with:', { plantId, plantData });
   const result = await collection.updateOne(
     { id: plantId },
     { $set: { ...plantData, updatedAt: new Date() } }
   );
-  
+  console.log('updatePlant result:', result);
   if (result.matchedCount === 0) {
+    console.error('updatePlant: Plant not found for update', { plantId });
     throw new Error("Plant not found for update");
   }
 }
