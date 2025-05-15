@@ -59,11 +59,13 @@ export async function getPlantsWithCategories(): Promise<Plant[]> {
 export async function getPlantById(plantId: string): Promise<Plant | null> {
   const collection = await getCollection('plants');
   console.log('getPlantById called with plantId:', plantId);
+  console.log('plantId as JSON:', JSON.stringify(plantId));
   const query = { id: plantId };
   console.log('getPlantById query:', query);
   const allPlants = await collection.find({}).toArray();
   console.log('All plants in collection:', allPlants.map(p => p.id));
   allPlants.forEach(p => {
+    console.log('db id as JSON:', JSON.stringify(p.id));
     const isEqual = p.id === plantId;
     console.log(`Comparing: '${p.id}' (length ${p.id.length}) === '${plantId}' (length ${plantId.length}) =>`, isEqual);
   });
