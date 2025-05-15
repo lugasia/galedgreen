@@ -35,7 +35,8 @@ export async function getPlants(): Promise<Plant[]> {
   const collection = await getCollection('plants');
   const count = await collection.countDocuments();
   console.log('Total plants in collection:', count);
-  const mongoPlants = await collection.find({}).toArray() as MongoPlant[];
+  const mongoPlants = await collection.find({}).limit(5).toArray() as MongoPlant[];
+  console.log('First few plants in collection:', mongoPlants);
   return mongoPlants.map(mapMongoPlantToPlant);
 }
 
