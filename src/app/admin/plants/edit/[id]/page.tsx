@@ -64,7 +64,7 @@ export default function EditPlantPage({ params }: EditPlantPageProps) {
   const handleSubmit = async (data: PlantFormData) => {
     setIsSubmitting(true);
     try {
-      await updatePlant(plantId, data);
+      await updatePlant(data.id || plantId, data);
       toast({
         title: "הצלחה!",
         description: `הצמח ${data.name} עודכן בהצלחה (לתצוגה הנוכחית, לא נשמר לקובץ).`,

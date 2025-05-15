@@ -41,13 +41,12 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
 
   return (
     <SidebarProvider defaultOpen>
-      <div className="flex h-screen bg-background">
-        <div className="w-64 min-w-64 max-w-64 h-full">
+      <div className="flex min-h-screen bg-background">
+        <nav className="w-64 min-w-64 max-w-64 h-full">
           <AdminSidebar />
-        </div>
-        <main className="flex-1 flex flex-col overflow-hidden mr-0 md:mr-64">
-          <header className="h-16 flex items-center justify-between px-6 border-b bg-card shrink-0">
-            {/* SidebarTrigger can be added here for mobile if needed */}
+        </nav>
+        <main className="flex-1 p-4">
+          <header className="h-16 flex items-center justify-between border-b bg-card shrink-0 px-0">
             <h1 className="text-xl font-semibold text-foreground">ניהול משתלה</h1>
           </header>
           <div className="flex-1 overflow-y-auto p-0 bg-muted/30">

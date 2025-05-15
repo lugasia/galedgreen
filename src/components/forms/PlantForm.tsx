@@ -17,6 +17,7 @@ import { useToast } from "@/hooks/use-toast";
 import Link from "next/link";
 
 const plantFormSchema = z.object({
+  id: z.string().optional(),
   name: z.string().min(2, "שם הצמח חייב להכיל לפחות 2 תווים."),
   categoryId: z.string().min(1, "יש לבחור קטגוריה."),
   imageUrl: z.string().url("כתובת תמונה לא תקינה.").or(z.literal("").optional()),
@@ -47,6 +48,7 @@ export function PlantForm({ plant, onSubmit, isSubmitting }: PlantFormProps) {
   const form = useForm<PlantFormData>({
     resolver: zodResolver(plantFormSchema),
     defaultValues: plant ? {
+      id: plant.id,
       name: plant.name,
       categoryId: plant.categoryId,
       imageUrl: plant.imageUrl || "",
@@ -57,6 +59,7 @@ export function PlantForm({ plant, onSubmit, isSubmitting }: PlantFormProps) {
       stock: plant.stock,
       description: plant.description || "",
     } : {
+      id: "",
       name: "",
       categoryId: "",
       imageUrl: "",
@@ -134,6 +137,7 @@ export function PlantForm({ plant, onSubmit, isSubmitting }: PlantFormProps) {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(handleSubmitForm)} className="space-y-6">
+        <input type="hidden" {...form.register("id")} />
         <FormField
           control={form.control}
           name="name"
