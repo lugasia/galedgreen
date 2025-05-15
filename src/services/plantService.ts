@@ -59,7 +59,9 @@ export async function getPlantsWithCategories(): Promise<Plant[]> {
 export async function getPlantById(plantId: string): Promise<Plant | null> {
   const collection = await getCollection('plants');
   console.log('getPlantById called with plantId:', plantId);
-  const mongoPlant = await collection.findOne({ id: plantId }) as MongoPlant | null;
+  const query = { id: plantId };
+  console.log('getPlantById query:', query);
+  const mongoPlant = await collection.findOne(query) as MongoPlant | null;
   console.log('getPlantById result:', mongoPlant);
   if (mongoPlant) {
     const plant = mapMongoPlantToPlant(mongoPlant);
