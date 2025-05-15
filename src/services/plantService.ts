@@ -32,11 +32,13 @@ function mapMongoPlantToPlant(mongoPlant: MongoPlant): Plant {
 }
 
 export async function getPlants(): Promise<Plant[]> {
+  console.time('getPlants');
   const collection = await getCollection('plants');
   const count = await collection.countDocuments();
   console.log('Total plants in collection:', count);
   const mongoPlants = await collection.find({}).limit(5).toArray() as MongoPlant[];
   console.log('First few plants in collection:', mongoPlants);
+  console.timeEnd('getPlants');
   return mongoPlants.map(mapMongoPlantToPlant);
 }
 
@@ -57,6 +59,7 @@ export async function getPlantsWithCategories(): Promise<Plant[]> {
 }
 
 export async function getPlantById(plantId: string): Promise<Plant | null> {
+  console.time('getPlantById');
   const collection = await getCollection('plants');
   const decodedId = decodeURIComponent(plantId);
   console.log('getPlantById called with plantId:', plantId);
@@ -73,6 +76,7 @@ export async function getPlantById(plantId: string): Promise<Plant | null> {
   });
   const mongoPlant = await collection.findOne(query) as MongoPlant | null;
   console.log('getPlantById result:', mongoPlant);
+  console.timeEnd('getPlantById');
   if (mongoPlant) {
     const plant = mapMongoPlantToPlant(mongoPlant);
     const categories = await getCategoriesFromService();
