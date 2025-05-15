@@ -42,20 +42,17 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
 
   return (
     <SidebarProvider defaultOpen>
-        <div className="flex h-screen bg-background">
-          {/* Swap order: SidebarInset (main content) first, then AdminSidebar (sidebar on right) */}
-          <SidebarInset className="flex-1 flex flex-col overflow-hidden">
-            <header className="h-16 flex items-center justify-between px-6 border-b bg-card shrink-0">
-              <SidebarTrigger className="md:hidden" /> 
-              <h1 className="text-xl font-semibold text-foreground">ניהול משתלה</h1>
-              {/* Add user profile, notifications etc. here */}
-            </header>
-            <div className="flex-1 overflow-y-auto p-0 bg-muted/30">
-              {children}
-            </div>
-          </SidebarInset>
-          <AdminSidebar /> 
+      <SidebarInset className="flex-1 flex flex-col overflow-hidden">
+        <header className="h-16 flex items-center justify-between px-6 border-b bg-card shrink-0">
+          <SidebarTrigger className="md:hidden" /> 
+          <h1 className="text-xl font-semibold text-foreground">ניהול משתלה</h1>
+          {/* Add user profile, notifications etc. here */}
+        </header>
+        <div className="flex-1 overflow-y-auto p-0 bg-muted/30">
+          {children}
         </div>
+      </SidebarInset>
+      <AdminSidebar />
     </SidebarProvider>
   );
 }
