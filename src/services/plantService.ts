@@ -62,7 +62,11 @@ export async function getPlantById(plantId: string): Promise<Plant | null> {
   const query = { id: plantId };
   console.log('getPlantById query:', query);
   const allPlants = await collection.find({}).toArray();
-  console.log('All plants in collection:', allPlants);
+  console.log('All plants in collection:', allPlants.map(p => p.id));
+  allPlants.forEach(p => {
+    const isEqual = p.id === plantId;
+    console.log(`Comparing: '${p.id}' (length ${p.id.length}) === '${plantId}' (length ${plantId.length}) =>`, isEqual);
+  });
   const mongoPlant = await collection.findOne(query) as MongoPlant | null;
   console.log('getPlantById result:', mongoPlant);
   if (mongoPlant) {
