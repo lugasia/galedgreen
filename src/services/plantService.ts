@@ -61,6 +61,8 @@ export async function getPlantById(plantId: string): Promise<Plant | null> {
   console.log('getPlantById called with plantId:', plantId);
   const query = { id: plantId };
   console.log('getPlantById query:', query);
+  const allPlants = await collection.find({}).toArray();
+  console.log('All plants in collection:', allPlants);
   const mongoPlant = await collection.findOne(query) as MongoPlant | null;
   console.log('getPlantById result:', mongoPlant);
   if (mongoPlant) {
