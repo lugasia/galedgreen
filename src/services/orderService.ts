@@ -3,6 +3,7 @@
 import type { Order, OrderItem } from '@/lib/types';
 import { getCollection } from './mongodbService';
 import { ObjectId } from 'mongodb';
+import { updatePlant } from './plantService';
 // import { collection, getDocs, addDoc, doc, updateDoc, query, orderBy, Timestamp, serverTimestamp } from 'firebase/firestore';
 
 // const ORDERS_COLLECTION = 'orders';
@@ -47,6 +48,18 @@ export async function addOrder(orderData: Omit<Order, 'id' | 'createdAt' | 'upda
     updatedAt: new Date(),
   };
   
+  // Decrease stock for each plant in the order
+  for (const item of orderData.items) {
+    const plant = await getPlantById(item.plantId);
+    if (!plant) {
+      throw new Error(`Plant with ID ${item.plantId} not found.`);
+    }
+    if (plant.stock < item.quantity) {
+      throw new Error(`Insufficient stock for plant ${plant.name}. Available: ${plant.stock}, requested: ${item.quantity}.`);
+    }
+    await updatePlant(item.plantId, { stock: plant.stock - item.quantity });
+  }
+  
   const result = await collection.insertOne(newOrder);
   const insertedOrder = await collection.findOne({ _id: result.insertedId }) as MongoOrder;
   return mapMongoOrderToOrder(insertedOrder);
@@ -54,6 +67,21 @@ export async function addOrder(orderData: Omit<Order, 'id' | 'createdAt' | 'upda
 
 export async function updateOrderStatus(orderId: string, status: Order['status']): Promise<void> {
   const collection = await getCollection('orders');
+  const order = await getOrderById(orderId);
+  if (!order) {
+    throw new Error("Order not found");
+  }
+  
+  // If the order is being canceled, restore the stock for each plant
+  if (status === 'canceled' && order.status !== 'canceled') {
+    for (const item of order.items) {
+      const plant = await getPlantById(item.plantId);
+      if (plant) {
+        await updatePlant(item.plantId, { stock: plant.stock + item.quantity });
+      }
+    }
+  }
+  
   const result = await collection.updateOne(
     { id: orderId },
     { 

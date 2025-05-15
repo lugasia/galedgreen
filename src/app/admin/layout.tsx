@@ -43,13 +43,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
   return (
     <SidebarProvider defaultOpen>
         <div className="flex h-screen bg-background">
-          {/* For RTL, the sidebar (peer) should come after the main content if it's on the right for peer-data-* to work */}
-          {/* However, the current Sidebar component uses fixed positioning for the visual sidebar and a spacer div.
-              The original order was AdminSidebar then SidebarInset.
-              If AdminSidebar is on the right, `peer-data-[side=right]` targets `SidebarInset`.
-              The original order is actually correct for `peer` to work as intended.
-          */}
-          <AdminSidebar /> 
+          {/* Swap order: SidebarInset (main content) first, then AdminSidebar (sidebar on right) */}
           <SidebarInset className="flex-1 flex flex-col overflow-hidden">
             <header className="h-16 flex items-center justify-between px-6 border-b bg-card shrink-0">
               <SidebarTrigger className="md:hidden" /> 
@@ -60,6 +54,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
               {children}
             </div>
           </SidebarInset>
+          <AdminSidebar /> 
         </div>
     </SidebarProvider>
   );
