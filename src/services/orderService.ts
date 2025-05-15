@@ -4,6 +4,7 @@ import type { Order, OrderItem } from '@/lib/types';
 import { getCollection } from './mongodbService';
 import { ObjectId } from 'mongodb';
 import { updatePlant } from './plantService';
+import { getPlantById } from './plantService';
 // import { collection, getDocs, addDoc, doc, updateDoc, query, orderBy, Timestamp, serverTimestamp } from 'firebase/firestore';
 
 // const ORDERS_COLLECTION = 'orders';

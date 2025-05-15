@@ -1,4 +1,3 @@
-
 "use client";
 
 import Link from "next/link";
@@ -11,7 +10,7 @@ import {
   SidebarMenu,
   SidebarMenuItem,
   SidebarMenuButton,
-  SidebarMenuSeparator,
+  SidebarSeparator,
   SidebarGroup,
   SidebarGroupLabel,
 } from "@/components/ui/sidebar"; // Assuming sidebar component exists
@@ -49,7 +48,7 @@ export function AdminSidebar() {
       variant="sidebar" // Or "floating", "inset"
       collapsible="icon" // Or "offcanvas", "none"
       side="right" // Changed from left to right
-      className="border-s bg-sidebar text-sidebar-foreground" // Changed border-e to border-s
+      className="border-s bg-sidebar text-sidebar-foreground w-64 min-w-64 max-w-64" // Set fixed width
     >
       <SidebarHeader className="p-4">
         <AppLogo />
